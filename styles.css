@@ -78,6 +78,7 @@ body {
 }
 
 .bottom_corners {
+    margin: 0 0 16px 0;
 }
 
 .island-header__title {

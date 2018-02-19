@@ -43,19 +43,23 @@
         </div>
         <svg width="560" height="16" class="bottom_corners">
             <defs>
-                <pattern id="triangle" x="0" y="0" width=".0625" height="1">
-                    <polygon points="0,0 17.5,16 35,0" style="fill: #fff;" />
-                </pattern>
+                <mask id="ticket_bottom">
+                    <rect width="560" height="16" fill="#fff" />
+                    <circle cx="0" cy="16" r="16" fill="#000" />
+                    <circle cx="560" cy="16" r="16" fill="#000" />
+                </mask>
             </defs>
-            <rect fill="url(#triangle)" width="560" height="16"/>
+            <rect width="560" height="16" mask="url(#ticket_bottom)" fill="#fff"/>
         </svg>
-        <svg width="560" height="16" viewbox="17.5 0 560 16" class="corners">
+        <svg width="560" height="16" class="top_corners">
             <defs>
-                <pattern id="triangle_inverted" x="0" y="0" width=".0588" height="1">
-                    <polygon points="0,16 17.5,0 35,16" style="fill: #fff;" />
-                </pattern>
+                <mask id="ticket_top">
+                    <rect width="560" height="16" fill="#fff" />
+                    <circle cx="0" cy="0" r="16" fill="#000" />
+                    <circle cx="560" cy="0" r="16" fill="#000" />
+                </mask>
             </defs>
-            <rect fill="url(#triangle_inverted)" width="595" height="16"/>
+            <rect width="560" height="16" mask="url(#ticket_top)" fill="#fff"/>
         </svg>
         <div class="island">
             <div class="island-section">
