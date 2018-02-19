@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Alegreya+Sans:300,400,500|Roboto:300,400,500');
+
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+
+    background: #eee;
+    width: 100%;
+    height: 100%;
+
+    font-family: "Alegreya Sans", Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+
+    background: #fff;
+    box-shadow: 0 1px #eee;
+}
+
+.header__logo {
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-size: 28px;
+
+    flex-grow: 2;
+
+    padding: 8px;
+    margin: 8px 16px;
+}
+
+.header__balance {
+    font-size: 20px;
+
+    padding: 8px;
+    margin: 8px 16px;
+}
+
+.header__user {
+    padding: 8px;
+    margin: 8px 16px;
+}
+
+.page-layout {
+    height: calc(100vh - 70px);
+}
+
+.island {
+    background: #fff;
+
+    position: relative;
+    top: 20px;
+    left: 70px;
+
+    width: 560px;
+
+    box-shadow: 0 0 1px #eee;
+}
+
+.island-header__title {
+    display: inline-block;
+
+    font-weight: 400;
+    font-size: 24px;
+
+    width: 100%;
+
+    margin: 16px 20px;
+}
+
+.island-hr {
+    width: 100%;
+    height: 1px;
+
+    background: #ddd;
+}
+
+.island-section {
+    overflow: auto;
+
+    padding: 0 20px;
+}
+
+.island__first-section {
+    margin-top: 24px;
+}
+
+.island-section__header {
+    font-weight: 400;
+    font-size: 20px;
+
+    margin: 4px 0 16px;
+}
+
+.payment__transfer-offered {
+    margin: 20px 0;
+
+    width: 100%;
+    height: 50px;
+
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.transfer-ammount-selector {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transfer-ammount-selector__ammount {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-grow: 2;
+    
+    margin: 20px 0;
+
+    width: 100%;
+    height: 50px;
+
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.transfer-ammount-selector__ammount__input {
+    flex-grow: 2;
+
+    margin: 0;
+    padding: 0 16px;
+
+    height: 95%;
+    width: 50px;
+
+    font-size: 16px;
+
+    border: 0;
+
+    -moz-appearance: textfield;
+}
+
+.transfer-ammount-selector__ammount__input:focus {
+    outline-width: 0;
+}
+
+.transfer-ammount-selector__ammount .transfer-ammount-selector__ammount__input:focus {
+    box-shadow: 0 0 10px #aaa;
+}
+
+.transfer-ammount-selector__ammount__input::-webkit-outer-spin-button,
+.transfer-ammount-selector__ammount__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.transfer-ammount-selector__ammount__currency {
+    margin: 0 8px;
+}
+
+.transfer-ammount-selector__swap {
+    padding: 8px 16px;
+}
+
+.payment__transfer-commit-button {
+    margin: 20px 0;
+
+    width: 100%;
+    height: 50px;
+
+    background: #6c5bfd;
+
+    box-shadow: 0 0 1px #aaa;
+    border-radius: 2px;
+}
