@@ -26,21 +26,59 @@
             <div class="island-section">
                 <h2 class="island-section__header">Сколько</h2>
                 <div class="island-hr"></div>
+                <div class="transfer-ammount-selector__limit">
+                </div>
                 <div class="transfer-ammount-selector">
                     <div class="transfer-ammount-selector__ammount">
-                        <input type="number" class="transfer-ammount-selector__ammount__input">
-                        <span class="transfer-ammount-selector__ammount__currency">USD</span>
+                        <input type="number" class="transfer-ammount-selector__ammount-input">
+                        <span class="transfer-ammount-selector__currency">USD</span>
                     </div>
-                    <div class="transfer-ammount-selector__swap">&rightleftarrows;</div>
+                    <div class="transfer-ammount-selector__swap">&rightarrow;</div>
                     <div class="transfer-ammount-selector__ammount">
-                        <input type="number" class="transfer-ammount-selector__ammount__input">
-                        <span class="transfer-ammount-selector__ammount__currency">BTC</span>
+                        <input type="number" class="transfer-ammount-selector__ammount-input">
+                        <span class="transfer-ammount-selector__currency">BTC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg width="560" height="16" class="bottom_corners">
+            <defs>
+                <pattern id="triangle" x="0" y="0" width=".0625" height="1">
+                    <polygon points="0,0 17.5,16 35,0" style="fill: #fff;" />
+                </pattern>
+            </defs>
+            <rect fill="url(#triangle)" width="560" height="16"/>
+        </svg>
+        <svg width="560" height="16" viewbox="17.5 0 560 16" class="corners">
+            <defs>
+                <pattern id="triangle_inverted" x="0" y="0" width=".0588" height="1">
+                    <polygon points="0,16 17.5,0 35,16" style="fill: #fff;" />
+                </pattern>
+            </defs>
+            <rect fill="url(#triangle_inverted)" width="595" height="16"/>
+        </svg>
+        <div class="island">
+            <div class="island-section">
+                <div class="receipt">
+                    <div class="receipt__row">
+                        <span>Комиссия</span>
+                        <span>10 Р</span>
+                    </div>
+                    <div class="receipt__row">
+                        <span>Комиссия</span>
+                        <span>10 Р</span>
+                    </div>
+                    <div class="receipt__row receipt__row_highlighted">
+                        <span>Итог</span>
+                        <span>10 Р</span>
                     </div>
                 </div>
             </div>
             <div class="island-hr"></div>
             <div class="island-section">
-                <div class="payment__transfer-commit-button"></div>    
+                <button class="payment__transfer-commit-button">
+                    <span class="payment__transfer-commit-button__title">Купить 1B</span>
+                </button>    
             </div>
         </div>
     </div>
