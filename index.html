@@ -14,19 +14,27 @@
     </header>
     <div class="page-layout">
         <div class="island">
-            <div class="island-header">
-                <h1 class="island-header__title">Купить</h1>
+            <div class="island-header island-section">
+                <h1 class="island-header__title">Купить биткоины</h1>
             </div>
-            <div class="island-hr"></div>
+            <div class="island-hr_horisontal"></div>
             <div class="island-section island__first-section">
                 <h2 class="island-section__header">Откуда</h2>
-                <div class="island-hr"></div>
+                <div class="island-hr_horisontal"></div>
                 <div class="payment__transfer-offered"></div>
             </div>
             <div class="island-section">
                 <h2 class="island-section__header">Сколько</h2>
-                <div class="island-hr"></div>
-                <div class="transfer-ammount-selector__limit">
+                <div class="island-hr_horisontal"></div>
+                <div class="transfer-ammount-limit">
+                    <div class="transfer-ammount-limit__title-row">
+                        <span class="transfer-ammount-limit__title-row__header">Лимит</span>
+                        <span class="transfer-ammount-limit__title-row__remaining">осталось 3B</span>
+                    </div>
+                    <div class="transfer-ammount-limit__bar">
+                        <div class="transfer-ammount-limit__bar__progress">
+                    </div>
+                </div>
                 </div>
                 <div class="transfer-ammount-selector">
                     <div class="transfer-ammount-selector__ammount">
@@ -40,28 +48,56 @@
                     </div>
                 </div>
             </div>
+            <svg width="560" height="16" class="bottom-corners">
+                <defs>
+                    <pattern id="triangle" x="0" y="0" width=".0625" height="1">
+                        <polygon points="0,0 17.5,16 35,0" style="fill: #fff;" />
+                    </pattern>
+                </defs>
+                <rect fill="url(#triangle)" width="560" height="16"/>
+            </svg>
         </div>
-        <svg width="560" height="16" class="bottom_corners">
-            <defs>
-                <mask id="ticket_bottom">
-                    <rect width="560" height="16" fill="#fff" />
-                    <circle cx="0" cy="16" r="16" fill="#000" />
-                    <circle cx="560" cy="16" r="16" fill="#000" />
-                </mask>
-            </defs>
-            <rect width="560" height="16" mask="url(#ticket_bottom)" fill="#fff"/>
-        </svg>
-        <svg width="560" height="16" class="top_corners">
-            <defs>
-                <mask id="ticket_top">
-                    <rect width="560" height="16" fill="#fff" />
-                    <circle cx="0" cy="0" r="16" fill="#000" />
-                    <circle cx="560" cy="0" r="16" fill="#000" />
-                </mask>
-            </defs>
-            <rect width="560" height="16" mask="url(#ticket_top)" fill="#fff"/>
-        </svg>
         <div class="island">
+            <svg width="560" height="16" viewbox="17.5 0 560 16" class="top-corners">
+                <defs>
+                    <pattern id="triangle_inverted" x="0" y="0" width=".0588" height="1">
+                        <polygon points="0,16 17.5,0 35,16" style="fill: #fff;" />
+                    </pattern>
+                </defs>
+                <rect fill="url(#triangle_inverted)" width="595" height="16"/>
+            </svg>
+            <div class="island-section">
+                <div class="transfer-wait-time">
+                    <div class="transfer-wait-time__period">
+                        <span class="transfer-wait-time__period__time">21</span>
+                        <span class="transfer-wait-time__period__description">Hour</span>
+                    </div>
+                    <div class="island-hr_vertical"></div>
+                    <div class="transfer-wait-time__period">
+                        <span class="transfer-wait-time__period__time">21</span>
+                        <span class="transfer-wait-time__period__description">Hour</span>
+                    </div>
+                    <div class="island-hr_vertical"></div>
+                    <div class="transfer-wait-time__period">
+                        <span class="transfer-wait-time__period__time">21</span>
+                        <span class="transfer-wait-time__period__description">Hour</span>
+                    </div>
+                    <div class="island-hr_vertical"></div>
+                    <div class="transfer-wait-time__period">
+                        <span class="transfer-wait-time__period__time">21</span>
+                        <span class="transfer-wait-time__period__description">Hour</span>
+                    </div>
+                </div>
+            </div>
+            <svg width="560" height="3" class="receipt-hr_horisontal">
+                <defs>
+                    <pattern id="rects" x="0" y="0" width=".0625" height="3">
+                        <rect width="17.5" height="3" fill="#000" />
+                        <rect width="17.5" height="3" fill="#fff" />
+                    </pattern>
+                </defs>
+                <rect fill="url(#rects)" width="560" height="3"/>
+            </svg>
             <div class="island-section">
                 <div class="receipt">
                     <div class="receipt__row">
@@ -78,7 +114,15 @@
                     </div>
                 </div>
             </div>
-            <div class="island-hr"></div>
+            <svg width="560" height="3" class="receipt-hr_horisontal">
+                <defs>
+                    <pattern id="rects" x="0" y="0" width=".0625" height="3">
+                        <rect width="17.5" height="3" fill="#000" />
+                        <rect width="17.5" height="3" fill="#fff" />
+                    </pattern>
+                </defs>
+                <rect fill="url(#rects)" width="560" height="3"/>
+            </svg>
             <div class="island-section">
                 <button class="payment__transfer-commit-button">
                     <span class="payment__transfer-commit-button__title">Купить 1B</span>

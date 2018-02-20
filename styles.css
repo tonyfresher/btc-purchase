@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Alegreya+Sans:300,400,500|Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rubik:300,400,500,700');
 
 body {
     margin: 0;
 
     --divider-color: #ddd;
+    --divider-radius: 2px;
     --light-shadow-color: #eee;
     --dark-shadow-color: #aaa;
+    --accent-color: #6c5bfd;
 }
 
 .main {
@@ -18,7 +20,7 @@ body {
     width: 100%;
     height: 100%;
 
-    font-family: "Alegreya Sans", Arial, sans-serif;
+    font-family: "Rubik", Arial, sans-serif;
 }
 
 .header {
@@ -65,20 +67,17 @@ body {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-
-    height: calc(100vh - 70px);
 }
 
 .island {
-    background: #fff;
-
     width: 560px;
 
     box-shadow: 0 0 1px var(--light-shadow-color);
 }
 
-.bottom_corners {
-    margin: 0 0 16px 0;
+.top-corners,
+.bottom-corners {
+    display: block;
 }
 
 .island-header__title {
@@ -89,12 +88,19 @@ body {
 
     width: 100%;
 
-    margin: 16px 20px;
+    margin: 16px 20px 16px 0;
 }
 
-.island-hr {
+.island-hr_horisontal {
     width: 100%;
     height: 1px;
+
+    background: var(--divider-color);
+}
+
+.island-hr_vertical {
+    width: 1px;
+    height: 100%;
 
     background: var(--divider-color);
 }
@@ -103,10 +109,12 @@ body {
     overflow: auto;
 
     padding: 0 20px;
+
+    background: #fff;
 }
 
 .island__first-section {
-    margin-top: 24px;
+    padding-top: 24px;
 }
 
 .island-section__header {
@@ -117,16 +125,52 @@ body {
 }
 
 .payment__transfer-offered {
-    margin: 20px 0;
+    margin: 14px 0 20px;
 
     width: 100%;
     height: 50px;
 
     border: 1px solid var(--divider-color);
-    border-radius: 2px;
+    border-radius: var(--divider-radius);
 
     background-image: url('./payment/payment__transfer-offered.png');
     background-size: cover;
+}
+
+.transfer-ammount-limit {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.transfer-ammount-limit__title-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 12px 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+.transfer-ammount-limit__bar {
+    height: 8px;
+
+    border: 1px solid var(--divider-color);
+    border-radius: var(--divider-radius);
+}
+
+.transfer-ammount-limit__bar__progress {
+    width: 40%;
+    height: 8px;
+
+    background: var(--accent-color);
+
+    border-radius: 1px 0 0 1px;
 }
 
 .transfer-ammount-selector {
@@ -135,15 +179,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    padding: 16px 0;
-}
-
-.transfer-ammount-selector__limit {
-    margin: 16px 0 0 0;
-
-    height: 8px;
-
-    background: #6c5bfd;
+    margin: 16px 0;
 }
 
 .transfer-ammount-selector__ammount {
@@ -158,7 +194,7 @@ body {
     height: 50px;
 
     border: 1px solid var(--divider-color);
-    border-radius: 2px;
+    border-radius: var(--divider-radius);
 }
 
 .transfer-ammount-selector__ammount-input {
@@ -195,6 +231,24 @@ body {
     padding: 8px 16px;
 }
 
+.transfer-wait-time {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 60px;
+
+    padding: 16px 0 20px;
+}
+
+.transfer-wait-time__period__time {
+    display: block;
+
+    font-weight: 700;
+    font-size: 24px;
+}
+
 .receipt {
     display: flex;
     flex-flow: column nowrap;
@@ -215,6 +269,10 @@ body {
     font-size: 16px;
 }
 
+.receipt-hr_horisontal {
+    display: block;
+}
+
 .receipt__row_highlighted span {
     font-weight: 600;
 }
@@ -225,10 +283,10 @@ body {
     width: 100%;
     height: 50px;
 
-    background: #6c5bfd;
+    background: var(--accent-color);
 
     box-shadow: 0 0 10px var(--dark-shadow-color);
-    border-radius: 2px;
+    border-radius: var(--divider-radius);
     border: 0;
 }
 
