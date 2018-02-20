@@ -9,7 +9,7 @@
 <main class="main">
     <header class="header">
         <div class="header__logo">Яндекс Биткоины</div>
-        <div class="header__balance">1B</div>
+        <div class="header__balance">1 B</div>
         <div class="header__user">tonyfresher</div>
     </header>
     <div class="page-layout">
@@ -17,19 +17,19 @@
             <div class="island-header island-section">
                 <h1 class="island-header__title">Купить биткоины</h1>
             </div>
-            <div class="island-hr_horisontal"></div>
+            <div class="hr_horisontal"></div>
             <div class="island-section island__first-section">
-                <h2 class="island-section__header">Откуда</h2>
-                <div class="island-hr_horisontal"></div>
+                <h2 class="island-section__header">На что</h2>
+                <div class="hr_horisontal"></div>
                 <div class="transaction-offered"></div>
             </div>
             <div class="island-section">
                 <h2 class="island-section__header">Сколько</h2>
-                <div class="island-hr_horisontal"></div>
+                <div class="hr_horisontal"></div>
                 <div class="transaction-ammount-limit">
                     <div class="transaction-ammount-limit__title-row">
                         <span class="transaction-ammount-limit__title-row__header">Лимит</span>
-                        <span class="transaction-ammount-limit__title-row__remaining">осталось 3B</span>
+                        <span class="transaction-ammount-limit__title-row__remaining">осталось 3 B</span>
                     </div>
                     <div class="transaction-ammount-limit__bar">
                         <div class="transaction-ammount-limit__bar__progress">
@@ -66,13 +66,29 @@
                 </defs>
                 <rect fill="url(#triangle_inverted)" width="595" height="16"/>
             </svg>
-            <div class="island-section">
+            <div class="island-section summary">
                 <div class="wait-time">
                     <span class="wait-time__time">2 дня</span>
                     <span class="wait-time__description">До подтверждения транзакции</span>
                 </div>
+                <div class="receipt">
+                    <div class="receipt__term">
+                        <span class="receipt__term__ammount">50 000 Р</span>
+                        <span class="receipt__term__description">0.04 BTC</span>
+                    </div>
+                    <span class="receipt__operator">+</span>
+                    <div class="receipt__term">
+                        <span class="receipt__term__ammount">2500Р</span>
+                        <span class="receipt__term__description">Комиссия</span>
+                    </div>
+                    <span class="receipt__operator">&#x3d;</span>
+                    <div class="receipt__term receipt__term_highlited">
+                        <span class="receipt__term__ammount">52 500Р</span>
+                        <span class="receipt__term__description">Итог</span>
+                    </div>
+                </div>
             </div>
-            <svg width="560" height="3" class="receipt-hr_horisontal">
+            <svg width="560" height="3" class="hr_horisontal_stripes">
                 <defs>
                     <pattern id="stripes" x="0" y="0" width=".0625" height="3">
                         <rect x="16.97" y="0" width="16.97" height="3" fill="#fff" />
@@ -81,27 +97,8 @@
                 <rect fill="url(#stripes)" width="543.03" height="3"/>
             </svg>
             <div class="island-section">
-                <div class="receipt">
-                    <div class="receipt__row">
-                        <span>Биткоины</span>
-                        <span>100 Р</span>
-                    </div>
-                    <div class="receipt__row">
-                        <span>Комиссия</span>
-                        <span>10 Р</span>
-                    </div>
-                    <div class="receipt__row receipt__row_highlighted">
-                        <span>Итог</span>
-                        <span>110 Р</span>
-                    </div>
-                </div>
-            </div>
-            <svg width="560" height="3" class="receipt-hr_horisontal">
-                <rect fill="url(#stripes)" width="543.03" height="3"/>
-            </svg>
-            <div class="island-section">
                 <button class="commit-button">
-                    <span class="commit-button__title">Купить 1B</span>
+                    <span class="commit-button__title">Купить биткоины - 52 500 P</span>
                 </button>    
             </div>
         </div>
