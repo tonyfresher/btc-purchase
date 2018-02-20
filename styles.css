@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rubik:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rubik:300,400,500,600');
 
 body {
     margin: 0;
@@ -124,7 +124,7 @@ body {
     margin: 4px 0 12px;
 }
 
-.payment__transfer-offered {
+.transaction-offered {
     margin: 14px 0 20px;
 
     width: 100%;
@@ -133,18 +133,18 @@ body {
     border: 1px solid var(--divider-color);
     border-radius: var(--divider-radius);
 
-    background-image: url('./payment/payment__transfer-offered.png');
+    background-image: url('./transaction/transaction-offered.png');
     background-size: cover;
 }
 
-.transfer-ammount-limit {
+.transaction-ammount-limit {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: stretch;
 }
 
-.transfer-ammount-limit__title-row {
+.transaction-ammount-limit__title-row {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -157,14 +157,14 @@ body {
     font-size: 14px;
 }
 
-.transfer-ammount-limit__bar {
+.transaction-ammount-limit__bar {
     height: 8px;
 
     border: 1px solid var(--divider-color);
     border-radius: var(--divider-radius);
 }
 
-.transfer-ammount-limit__bar__progress {
+.transaction-ammount-limit__bar__progress {
     width: 40%;
     height: 8px;
 
@@ -173,7 +173,7 @@ body {
     border-radius: 1px 0 0 1px;
 }
 
-.transfer-ammount-selector {
+.transaction-ammount-selector {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -182,7 +182,7 @@ body {
     margin: 16px 0;
 }
 
-.transfer-ammount-selector__ammount {
+.transaction-ammount-selector__ammount {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -197,7 +197,7 @@ body {
     border-radius: var(--divider-radius);
 }
 
-.transfer-ammount-selector__ammount-input {
+.transaction-ammount-selector__ammount-input {
     flex-grow: 2;
 
     margin: 0;
@@ -213,40 +213,46 @@ body {
     -moz-appearance: textfield;
 }
 
-.transfer-ammount-selector__ammount-input:focus {
+.transaction-ammount-selector__ammount-input:focus {
     outline-width: 0;
 }
 
-.transfer-ammount-selector__ammount-input::-webkit-outer-spin-button,
-.transfer-ammount-selector__ammount-input::-webkit-inner-spin-button {
+.transaction-ammount-selector__ammount-input::-webkit-outer-spin-button,
+.transaction-ammount-selector__ammount-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.transfer-ammount-selector__currency {
+.transaction-ammount-selector__currency {
     color: #aaa;
     margin: 0 16px;
 }
 
-.transfer-ammount-selector__swap {
+.transaction-ammount-selector__swap {
     padding: 8px 16px;
 }
 
-.transfer-wait-time {
+.wait-time  {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 
     height: 60px;
 
     padding: 16px 0 20px;
 }
 
-.transfer-wait-time__period__time {
+.wait-time__time {
     display: block;
 
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.wait-time__description {
+    color: #777;
+
+    font-size: 14px;
 }
 
 .receipt {
@@ -277,7 +283,7 @@ body {
     font-weight: 600;
 }
 
-.payment__transfer-commit-button {
+.commit-button {
     margin: 20px 0;
 
     width: 100%;
@@ -290,15 +296,15 @@ body {
     border: 0;
 }
 
-.payment__transfer-commit-button:focus {
+.commit-button:focus {
     outline-width: 0;
 }
 
-.payment__transfer-commit-button:active {
+.commit-button:active {
     box-shadow: 0 0;
 }
 
-.payment__transfer-commit-button__title {
+.commit-button__title {
     margin: auto;
 
     text-align: center;

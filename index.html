@@ -21,30 +21,30 @@
             <div class="island-section island__first-section">
                 <h2 class="island-section__header">Откуда</h2>
                 <div class="island-hr_horisontal"></div>
-                <div class="payment__transfer-offered"></div>
+                <div class="transaction-offered"></div>
             </div>
             <div class="island-section">
                 <h2 class="island-section__header">Сколько</h2>
                 <div class="island-hr_horisontal"></div>
-                <div class="transfer-ammount-limit">
-                    <div class="transfer-ammount-limit__title-row">
-                        <span class="transfer-ammount-limit__title-row__header">Лимит</span>
-                        <span class="transfer-ammount-limit__title-row__remaining">осталось 3B</span>
+                <div class="transaction-ammount-limit">
+                    <div class="transaction-ammount-limit__title-row">
+                        <span class="transaction-ammount-limit__title-row__header">Лимит</span>
+                        <span class="transaction-ammount-limit__title-row__remaining">осталось 3B</span>
                     </div>
-                    <div class="transfer-ammount-limit__bar">
-                        <div class="transfer-ammount-limit__bar__progress">
+                    <div class="transaction-ammount-limit__bar">
+                        <div class="transaction-ammount-limit__bar__progress">
                     </div>
                 </div>
                 </div>
-                <div class="transfer-ammount-selector">
-                    <div class="transfer-ammount-selector__ammount">
-                        <input type="number" class="transfer-ammount-selector__ammount-input">
-                        <span class="transfer-ammount-selector__currency">USD</span>
+                <div class="transaction-ammount-selector">
+                    <div class="transaction-ammount-selector__ammount">
+                        <input type="number" class="transaction-ammount-selector__ammount-input">
+                        <span class="transaction-ammount-selector__currency">RUB</span>
                     </div>
-                    <div class="transfer-ammount-selector__swap">&rightarrow;</div>
-                    <div class="transfer-ammount-selector__ammount">
-                        <input type="number" class="transfer-ammount-selector__ammount-input">
-                        <span class="transfer-ammount-selector__currency">BTC</span>
+                    <div class="transaction-ammount-selector__swap">&rightarrow;</div>
+                    <div class="transaction-ammount-selector__ammount">
+                        <input type="number" class="transaction-ammount-selector__ammount-input">
+                        <span class="transaction-ammount-selector__currency">BTC</span>
                     </div>
                 </div>
             </div>
@@ -67,42 +67,24 @@
                 <rect fill="url(#triangle_inverted)" width="595" height="16"/>
             </svg>
             <div class="island-section">
-                <div class="transfer-wait-time">
-                    <div class="transfer-wait-time__period">
-                        <span class="transfer-wait-time__period__time">21</span>
-                        <span class="transfer-wait-time__period__description">Hour</span>
-                    </div>
-                    <div class="island-hr_vertical"></div>
-                    <div class="transfer-wait-time__period">
-                        <span class="transfer-wait-time__period__time">21</span>
-                        <span class="transfer-wait-time__period__description">Hour</span>
-                    </div>
-                    <div class="island-hr_vertical"></div>
-                    <div class="transfer-wait-time__period">
-                        <span class="transfer-wait-time__period__time">21</span>
-                        <span class="transfer-wait-time__period__description">Hour</span>
-                    </div>
-                    <div class="island-hr_vertical"></div>
-                    <div class="transfer-wait-time__period">
-                        <span class="transfer-wait-time__period__time">21</span>
-                        <span class="transfer-wait-time__period__description">Hour</span>
-                    </div>
+                <div class="wait-time">
+                    <span class="wait-time__time">2 дня</span>
+                    <span class="wait-time__description">До подтверждения транзакции</span>
                 </div>
             </div>
             <svg width="560" height="3" class="receipt-hr_horisontal">
                 <defs>
-                    <pattern id="rects" x="0" y="0" width=".0625" height="3">
-                        <rect width="17.5" height="3" fill="#000" />
-                        <rect width="17.5" height="3" fill="#fff" />
+                    <pattern id="stripes" x="0" y="0" width=".0625" height="3">
+                        <rect x="16.97" y="0" width="16.97" height="3" fill="#fff" />
                     </pattern>
                 </defs>
-                <rect fill="url(#rects)" width="560" height="3"/>
+                <rect fill="url(#stripes)" width="543.03" height="3"/>
             </svg>
             <div class="island-section">
                 <div class="receipt">
                     <div class="receipt__row">
-                        <span>Комиссия</span>
-                        <span>10 Р</span>
+                        <span>Биткоины</span>
+                        <span>100 Р</span>
                     </div>
                     <div class="receipt__row">
                         <span>Комиссия</span>
@@ -110,22 +92,16 @@
                     </div>
                     <div class="receipt__row receipt__row_highlighted">
                         <span>Итог</span>
-                        <span>10 Р</span>
+                        <span>110 Р</span>
                     </div>
                 </div>
             </div>
             <svg width="560" height="3" class="receipt-hr_horisontal">
-                <defs>
-                    <pattern id="rects" x="0" y="0" width=".0625" height="3">
-                        <rect width="17.5" height="3" fill="#000" />
-                        <rect width="17.5" height="3" fill="#fff" />
-                    </pattern>
-                </defs>
-                <rect fill="url(#rects)" width="560" height="3"/>
+                <rect fill="url(#stripes)" width="543.03" height="3"/>
             </svg>
             <div class="island-section">
-                <button class="payment__transfer-commit-button">
-                    <span class="payment__transfer-commit-button__title">Купить 1B</span>
+                <button class="commit-button">
+                    <span class="commit-button__title">Купить 1B</span>
                 </button>    
             </div>
         </div>
