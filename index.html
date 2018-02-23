@@ -13,23 +13,28 @@
         <div class="header__user">tonyfresher</div>
     </header>
     <div class="page-layout">
-        <div class="island">
-            <div class="island-header island-section">
+        <div class="island" id="form">
+            <div class="island-section island-header">
                 <h1 class="island-header__title">Купить биткоины</h1>
+                <span class="island-header__subtitle">624 437 ₽ за 1 B</span>
             </div>
-            <div class="hr_horisontal"></div>
+            <div class="hr_horisontal hr_horisontal_main"></div>
             <div class="island-section island__first-section">
                 <h2 class="island-section__header">На что</h2>
                 <div class="hr_horisontal"></div>
-                <div class="transaction-offered"></div>
+                <button class="transaction-offered">
+                    <span class="transaction-offered__method">Мой кошелёк</span>
+                    <span class="transaction-offered__balance">1 ₽</span>
+                    <span class="transaction-offered__arrow">&dtrif;</span>
+                </button>
             </div>
             <div class="island-section">
-                <h2 class="island-section__header">Сколько</h2>
+                <h2 class="header__title island-section__header">Сколько</h2>
                 <div class="hr_horisontal"></div>
                 <div class="transaction-ammount-limit">
                     <div class="transaction-ammount-limit__title-row">
-                        <span class="transaction-ammount-limit__title-row__header">Лимит</span>
-                        <span class="transaction-ammount-limit__title-row__remaining">осталось 3 B</span>
+                        <span class="transaction-ammount-limit__title-row__header">Лимит на месяц</span>
+                        <span class="transaction-ammount-limit__title-row__remaining">осталось 325 000 ₽</span>
                     </div>
                     <div class="transaction-ammount-limit__bar">
                         <div class="transaction-ammount-limit__bar__progress">
@@ -97,7 +102,7 @@
                 <rect fill="url(#stripes)" width="543.03" height="3"/>
             </svg>
             <div class="island-section">
-                <button class="commit-button">
+                <button class="commit-button" onclick="document.getElementById(&quot;form&quot;).style.display = &quot;block&quot;;">
                     <span class="commit-button__title">Купить биткоины - 52 500 ₽</span>
                 </button>    
             </div>
