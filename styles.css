@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rubik:200,300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Rubik:200,300,400,500,600');
 
 body {
     margin: 0;
+
+    background: #eee;
 
     --divider-color: #ddd;
     --divider-radius: 2px;
@@ -18,10 +20,9 @@ body {
 .main {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 
-    background: #eee;
     width: 100%;
     height: 100%;
 
@@ -42,29 +43,25 @@ body {
 }
 
 .header__logo {
-    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-family: "Roboto Condensed", Arial, sans-serif;
     font-size: 28px;
 
     flex-grow: 2;
 
-    padding: 8px;
-    margin: 8px 16px;
-}
+    font-weight: 300;
 
-.header__balance {
-    font-size: 20px;
-
-    padding: 8px;
-    margin: 8px 16px;
+    margin: 16px 24px;
 }
 
 .header__user {
-    padding: 8px;
-    margin: 8px 16px;
+    margin: 16px 24px;
+
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .page-layout {
-    margin: 20px 0 20px 70px;
+    margin: 20px 0 20px 55px;
 
     display: flex;
     flex-flow: column;
@@ -81,7 +78,7 @@ body {
 .island-header {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -89,17 +86,14 @@ body {
     font-weight: 400;
     font-size: 24px;
 
-    margin: 16px 20px 16px 0;
+    margin: 16px 4px 16px 0;
 }
 
 .island-header__subtitle {
-    padding: 2px 4px;
+    margin: 4px 4px 0;
 
-    color: var(--caption-color);
-    font-size: var(--caption-font-size);
-
-    border: 1px solid var(--divider-color);
-    border-radius: var(--divider-radius);
+    color: #999;
+    font-size: 14px;
 }
 
 .top-corners,
@@ -182,11 +176,6 @@ body {
 .transaction-offered__method {
     flex-grow: 2;
 
-    font-size: var(--data-font-size);
-}
-
-.transaction-offered__balance {
-    color: var(--caption-color);
     font-size: var(--data-font-size);
 }
 
@@ -297,6 +286,8 @@ body {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: flex-start;
+
+    transition: top 2s;
 }
 
 .wait-time  {
