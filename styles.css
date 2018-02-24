@@ -92,7 +92,7 @@ body {
 .island-header__subtitle {
     margin: 4px 4px 0;
 
-    color: #999;
+    opacity: .4;
     font-size: 14px;
 }
 
