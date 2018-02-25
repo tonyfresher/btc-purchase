@@ -138,7 +138,7 @@ body {
     margin: 16px 0 14px;
 }
 
-.transaction-offered {
+.payment-method {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -161,11 +161,11 @@ body {
     -webkit-appearance: none;
 }
 
-.transaction-offered:focus {
+.payment-method:focus {
     outline-width: 0;
 }
 
-.transaction-offered__ic {
+.payment-method__ic {
     margin: 0 16px;
 
     height: 20px;
@@ -173,13 +173,13 @@ body {
     color: #444;
 }
 
-.transaction-offered__method {
+.payment-method__method {
     flex-grow: 2;
 
     font-size: var(--data-font-size);
 }
 
-.transaction-offered__arrow {
+.payment-method__arrow {
     margin: 0 16px;
 
     height: 18px;
@@ -187,14 +187,14 @@ body {
     color: #444;
 }
 
-.transaction-ammount-limit {
+.ammount-limit {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: stretch;
 }
 
-.transaction-ammount-limit__title-row {
+.ammount-limit__title-row {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -206,14 +206,14 @@ body {
     font-size: var(--caption-font-size);
 }
 
-.transaction-ammount-limit__bar {
+.ammount-limit__bar {
     height: 8px;
 
     border: 1px solid var(--divider-color);
     border-radius: var(--divider-radius);
 }
 
-.transaction-ammount-limit__bar__progress {
+.ammount-limit__bar__progress {
     width: 40%;
     height: 8px;
 
@@ -223,7 +223,7 @@ body {
     border-radius: 1px 0 0 1px;
 }
 
-.transaction-ammount-selector {
+.ammount-selector {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -232,7 +232,7 @@ body {
     margin: 16px 0 20px;
 }
 
-.transaction-ammount-selector__ammount {
+.ammount-selector__ammount {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -247,7 +247,7 @@ body {
     border-radius: var(--divider-radius);
 }
 
-.transaction-ammount-selector__ammount-input {
+.ammount-selector__ammount-input {
     flex-grow: 2;
 
     margin: 0;
@@ -263,21 +263,21 @@ body {
     -moz-appearance: textfield;
 }
 
-.transaction-ammount-selector__ammount-input:focus {
+.ammount-selector__ammount-input:focus {
     outline-width: 0;
 }
 
-.transaction-ammount-selector__ammount-input::-webkit-outer-spin-button,
-.transaction-ammount-selector__ammount-input::-webkit-inner-spin-button {
+.ammount-selector__ammount-input::-webkit-outer-spin-button,
+.ammount-selector__ammount-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.transaction-ammount-selector__currency {
+.ammount-selector__currency {
     color: #aaa;
     margin: 0 16px;
 }
 
-.transaction-ammount-selector__swap {
+.ammount-selector__swap {
     padding: 8px 16px;
 }
 

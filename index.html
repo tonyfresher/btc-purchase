@@ -15,7 +15,7 @@
     <div class="page-layout">
         <div class="island form">
             <div class="island-section island-header">
-                <h1 class="island-header__title">Биткойны</h1>
+                <h1 class="island-header__title">Биткойн</h1>
                 <span class="island-header__subtitle">—</span>
                 <span class="island-header__subtitle">624 437 ₽ за 1 Ƀ</span>
             </div>
@@ -23,35 +23,40 @@
             <div class="island-section island__first-section">
                 <h2 class="island-section__header">Способ оплаты</h2>
                 <div class="hr_horisontal"></div>
-                <button class="transaction-offered">
-                    <i class="far fa-credit-card fa-2x transaction-offered__ic"></i>
-                    <span class="transaction-offered__method">•••• 6682</span>
-                    <i class="fas fa-chevron-down fa-2x transaction-offered__arrow"></i>
+                <button class="payment-method">
+                    <i class="far fa-credit-card fa-2x payment-method__ic"></i>
+                    <span class="payment-method__method">•••• 6682</span>
+                    <i class="fas fa-chevron-down fa-2x payment-method__arrow"></i>
+                    <!-- <div class="payment-method__options">
+                        <span>First</span>
+                        <span>First</span>
+                        <span>First</span>
+                    </div> -->
                 </button>
             </div>
             <div class="island-section">
                 <h2 class="header__title island-section__header">Количество</h2>
                 <div class="hr_horisontal"></div>
-                <div class="transaction-ammount-limit">
-                    <div class="transaction-ammount-limit__title-row">
-                        <span class="transaction-ammount-limit__title-row__header">Максимальная сумма операции</span>
-                        <span class="transaction-ammount-limit__title-row__remaining">325 000 ₽</span>
+                <div class="ammount-limit">
+                    <div class="ammount-limit__title-row">
+                        <span class="ammount-limit__title-row__header">Максимальная сумма операции</span>
+                        <span class="ammount-limit__title-row__remaining">325 000 ₽</span>
                     </div>
-                    <div class="transaction-ammount-limit__bar">
-                        <div class="transaction-ammount-limit__bar__progress">
+                    <div class="ammount-limit__bar">
+                        <div class="ammount-limit__bar__progress">
                     </div>
                 </div>
                 </div>
-                <div class="transaction-ammount-selector">
-                    <script defer src="./transaction-ammount-selector/transaction-ammount-selector.js"></script>
-                    <div class="transaction-ammount-selector__ammount transaction-ammount-selector__ammount_rub">
-                        <input type="number" class="transaction-ammount-selector__ammount-input">
-                        <span class="transaction-ammount-selector__currency">RUB</span>
+                <div class="ammount-selector">
+                    <script defer src="./ammount-selector/ammount-selector.js"></script>
+                    <div class="ammount-selector__ammount ammount-selector__ammount_rub">
+                        <input type="number" class="ammount-selector__ammount-input">
+                        <span class="ammount-selector__currency">RUB</span>
                     </div>
-                    <div class="transaction-ammount-selector__swap">&rightarrow;</div>
-                    <div class="transaction-ammount-selector__ammount transaction-ammount-selector__ammount_btc">
-                        <input type="number" class="transaction-ammount-selector__ammount-input">
-                        <span class="transaction-ammount-selector__currency">BTC</span>
+                    <div class="ammount-selector__swap">&rightarrow;</div>
+                    <div class="ammount-selector__ammount ammount-selector__ammount_btc">
+                        <input type="number" class="ammount-selector__ammount-input">
+                        <span class="ammount-selector__currency">BTC</span>
                     </div>
                 </div>
             </div>
@@ -76,7 +81,7 @@
             <div class="island-section summary">
                 <div class="wait-time">
                     <span class="wait-time__time">5 часов</span>
-                    <span class="wait-time__description">До завершения покупки</span>
+                    <span class="wait-time__description">До завершения операции</span>
                 </div>
                 <div class="receipt">
                     <div class="receipt__term">
