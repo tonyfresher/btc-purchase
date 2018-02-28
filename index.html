@@ -2,86 +2,127 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Яндекс Биткоины</title>
+    <title>Кошеляндекс</title>
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
 <main class="main">
     <header class="header">
-        <div class="header__logo">Яндекс Биткоины</div>
-        <div class="header__balance">1B</div>
+        <div class="header__logo">Кошеляндекс</div>
         <div class="header__user">tonyfresher</div>
     </header>
     <div class="page-layout">
-        <div class="island">
-            <div class="island-header">
-                <h1 class="island-header__title">Купить</h1>
+        <div class="island form">
+            <div class="island-section island-header">
+                <h1 class="island-header__title">Биткойн</h1>
+                <span class="island-header__subtitle">—</span>
+                <span class="island-header__subtitle">624 437 ₽ за 1 Ƀ</span>
             </div>
-            <div class="island-hr"></div>
-            <div class="island-section island__first-section">
-                <h2 class="island-section__header">Откуда</h2>
-                <div class="island-hr"></div>
-                <div class="payment__transfer-offered"></div>
-            </div>
-            <div class="island-section">
-                <h2 class="island-section__header">Сколько</h2>
-                <div class="island-hr"></div>
-                <div class="transfer-ammount-selector__limit">
-                </div>
-                <div class="transfer-ammount-selector">
-                    <div class="transfer-ammount-selector__ammount">
-                        <input type="number" class="transfer-ammount-selector__ammount-input">
-                        <span class="transfer-ammount-selector__currency">USD</span>
+            <div class="hr_horisontal hr_horisontal_main"></div>
+            <div class="island-section island-section_padded payment-method-island-section">
+                <h2 class="island-section__header">Способ оплаты</h2>
+                <div class="hr_horisontal"></div>
+                <button class="payment-method-button">
+                    <div class="payment-method">
+                        <i class="far fa-credit-card fa-2x payment-method__ic"></i>
+                        <span class="payment-method__method">•••• 6682</span>
                     </div>
-                    <div class="transfer-ammount-selector__swap">&rightarrow;</div>
-                    <div class="transfer-ammount-selector__ammount">
-                        <input type="number" class="transfer-ammount-selector__ammount-input">
-                        <span class="transfer-ammount-selector__currency">BTC</span>
+                    <i class="fas fa-chevron-down fa-2x payment-method__arrow"></i>
+                    <div class="payment-method__options">
+                        <div class="payment-method">
+                            <i class="far fa-credit-card fa-2x payment-method__ic"></i>
+                            <span class="payment-method__method">•••• 6682</span>
+                        </div>
+                        <div class="payment-method">
+                            <i class="far fa-credit-card fa-2x payment-method__ic"></i>
+                            <span class="payment-method__method">•••• 1124</span>
+                        </div>
+                        <div class="payment-method">
+                            <i class="far fa-credit-card fa-2x payment-method__ic"></i>
+                            <span class="payment-method__method">•••• 0286</span>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="island-section island-section_padded">
+                <h2 class="header__title island-section__header">Количество</h2>
+                <div class="hr_horisontal"></div>
+                <div class="ammount-limit">
+                    <div class="ammount-limit__title-row">
+                        <span class="ammount-limit__title-row__header">Максимальная сумма операции</span>
+                        <span class="ammount-limit__title-row__remaining">325 000 ₽</span>
+                    </div>
+                    <div class="ammount-limit__bar">
+                        <div class="ammount-limit__bar__progress">
+                    </div>
+                </div>
+                </div>
+                <div class="ammount-selector">
+                    <script defer src="./ammount-selector/ammount-selector.js"></script>
+                    <div class="ammount-selector__ammount ammount-selector__ammount_rub">
+                        <input type="number" class="ammount-selector__ammount-input">
+                        <span class="ammount-selector__currency">RUB</span>
+                    </div>
+                    <div class="ammount-selector__swap">&rightarrow;</div>
+                    <div class="ammount-selector__ammount ammount-selector__ammount_btc">
+                        <input type="number" class="ammount-selector__ammount-input">
+                        <span class="ammount-selector__currency">BTC</span>
                     </div>
                 </div>
             </div>
+            <svg width="560" height="16" class="bottom-corners">
+                <defs>
+                    <pattern id="triangle" x="0" y="0" width=".0625" height="1">
+                        <polygon points="0,0 17.5,16 35,0" style="fill: #fff;" />
+                    </pattern>
+                </defs>
+                <rect fill="url(#triangle)" width="560" height="16"/>
+            </svg>
         </div>
-        <svg width="560" height="16" class="bottom_corners">
-            <defs>
-                <mask id="ticket_bottom">
-                    <rect width="560" height="16" fill="#fff" />
-                    <circle cx="0" cy="16" r="16" fill="#000" />
-                    <circle cx="560" cy="16" r="16" fill="#000" />
-                </mask>
-            </defs>
-            <rect width="560" height="16" mask="url(#ticket_bottom)" fill="#fff"/>
-        </svg>
-        <svg width="560" height="16" class="top_corners">
-            <defs>
-                <mask id="ticket_top">
-                    <rect width="560" height="16" fill="#fff" />
-                    <circle cx="0" cy="0" r="16" fill="#000" />
-                    <circle cx="560" cy="0" r="16" fill="#000" />
-                </mask>
-            </defs>
-            <rect width="560" height="16" mask="url(#ticket_top)" fill="#fff"/>
-        </svg>
         <div class="island">
-            <div class="island-section">
+            <svg width="560" height="16" viewbox="17.5 0 560 16" class="top-corners">
+                <defs>
+                    <pattern id="triangle_inverted" x="0" y="0" width=".0588" height="1">
+                        <polygon points="0,16 17.5,0 35,16" style="fill: #fff;" />
+                    </pattern>
+                </defs>
+                <rect fill="url(#triangle_inverted)" width="595" height="16"/>
+            </svg>
+            <div class="island-section summary">
+                <div class="wait-time">
+                    <span class="wait-time__time">5 часов</span>
+                    <span class="wait-time__description">До завершения операции</span>
+                </div>
                 <div class="receipt">
-                    <div class="receipt__row">
-                        <span>Комиссия</span>
-                        <span>10 Р</span>
+                    <div class="receipt__term">
+                        <span class="receipt__term__ammount">50 000 ₽</span>
+                        <span class="receipt__term__description">0.04 Ƀ</span>
                     </div>
-                    <div class="receipt__row">
-                        <span>Комиссия</span>
-                        <span>10 Р</span>
+                    <span class="receipt__operator">+</span>
+                    <div class="receipt__term">
+                        <span class="receipt__term__ammount">2500 ₽</span>
+                        <span class="receipt__term__description">Комиссия</span>
                     </div>
-                    <div class="receipt__row receipt__row_highlighted">
-                        <span>Итог</span>
-                        <span>10 Р</span>
+                    <span class="receipt__operator">&#x3d;</span>
+                    <div class="receipt__term receipt__term_highlited">
+                        <span class="receipt__term__ammount">52 500 ₽</span>
+                        <span class="receipt__term__description">Итог</span>
                     </div>
                 </div>
             </div>
-            <div class="island-hr"></div>
-            <div class="island-section">
-                <button class="payment__transfer-commit-button">
-                    <span class="payment__transfer-commit-button__title">Купить 1B</span>
+            <svg width="560" height="3" class="hr_horisontal_stripes">
+                <defs>
+                    <pattern id="stripes" x="0" y="0" width=".0625" height="3">
+                        <rect x="16.97" y="0" width="16.97" height="3" fill="#fff" />
+                    </pattern>
+                </defs>
+                <rect fill="url(#stripes)" width="543.03" height="3"/>
+            </svg>
+            <div class="island-section commit-button-section">
+                <script defer src="./commit-button/commit-button.js"></script>
+                <button class="commit-button">
+                    <span class="commit-button__title">Купить</span>
                 </button>    
             </div>
         </div>
