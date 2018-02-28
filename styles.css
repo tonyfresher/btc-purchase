@@ -299,6 +299,10 @@ body {
     border-radius: var(--divider-radius);
 }
 
+.ammount-selector__ammount_btc {
+    border: 1px dashed var(--divider-color);
+}
+
 .ammount-selector__ammount-input {
     flex-grow: 2;
 
