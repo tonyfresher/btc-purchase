@@ -43,7 +43,7 @@ body {
     box-shadow: 0 1px var(--light-shadow-color);
 }
 
-.header__logo {
+.logo {
     font-family: "Roboto Condensed", Arial, sans-serif;
     font-size: 28px;
 
@@ -51,14 +51,29 @@ body {
 
     font-weight: 300;
 
-    margin: 16px 24px;
+    margin: 0 24px;
 }
 
-.header__user {
-    margin: 16px 24px;
+.header__element {
+    margin: 0 24px 0 0;
 
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.balance {
+    padding: 4px 8px 4px 4px;
+
+    border: 1px solid var(--divider-color);
+    border-radius: var(--divider-radius);
+}
+
+.balance__ic {
+    height: 20px;
+}
+
+.balance__ammount {
+    font-size: 15px;
 }
 
 .page-layout {
